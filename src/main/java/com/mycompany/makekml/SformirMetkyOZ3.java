@@ -14,6 +14,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 /**
  *
@@ -48,9 +49,9 @@ public class SformirMetkyOZ3 {
         writetList();
 
         frame.getBtnZapisat().addActionListener((ActionEvent e) -> {
+           
             if (!pystoePole(frame)) {
-                GenerateKML metka = new GenerateKML(frame.getpHarakterZeli().getText(),
-                        frame);
+                GenerateKML metka = new GenerateKML(getNewName(frame.getpHarakterZeli().getText()), frame);
                 metka.generate();
                 System.exit(0);
             }
@@ -137,8 +138,51 @@ public class SformirMetkyOZ3 {
         return mass;
     }
 
+    //получение нового имени
+    public static String getNewName(String name) {
+        boolean proverka = false;
+        String nameNew;
+        File directory = new File("D:\\YO_NA\\Generate kml OZ");
+        File[] list = directory.listFiles();
+
+        nameNew = name + getRandNumber();
+
+        proverka = getSovpadenie(list, nameNew, proverka);
+
+        if (!proverka) {
+            return nameNew;
+        } else {
+            while (proverka) {
+                nameNew = name + getRandNumber();
+                proverka = getSovpadenie(list, nameNew, proverka);
+            }
+            return nameNew;
+        }
+
+    }
+
+    //проверить папку на совпадение имен
+    public static boolean getSovpadenie(File[] list, String name, boolean proverka) {
+        if (list != null) {
+            for (File file : list) {
+                if (file.getName().equals(name)) {
+                    proverka = true;
+                }
+            }
+        }
+        return proverka;
+    }
+
+    //сгенерировать номер
+    public static int getRandNumber() {
+        int min = 1;
+        int max = 1000;
+        Random random = new Random();
+        return random.nextInt(max - min + 1) + min;
+    }
+
     public static void handlError(IOException e) {
-        System.out.println("РЁР»СЏРїР°: " + SformirMetkyOZ3.class.getName() + e.getMessage());
+        System.out.println("Shlapa: " + SformirMetkyOZ3.class.getName() + e.getMessage());
     }
 
     public static void writetList() {
