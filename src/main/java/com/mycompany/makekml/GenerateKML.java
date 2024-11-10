@@ -6,10 +6,11 @@ package com.mycompany.makekml;
 
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 
 import static com.mycompany.makekml.SformirMetkyOZ3.getTime;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 
 /**
  *
@@ -38,7 +39,8 @@ public class GenerateKML {
         double b = bl[0];
         double l = bl[1];
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+                 new FileOutputStream(filePath),"UTF-8"))) {
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
                     + "<kml xmlns=\"http://earth.google.com/kml/2.2\">\n"
                     + "  <Document>\n"
