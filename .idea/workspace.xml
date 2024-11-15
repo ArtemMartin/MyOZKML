@@ -48,10 +48,17 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "D:/YO_NA/Projekts/MakeKML",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
+=======
+    "last_opened_file_path": "/home/artem/D/Zasechka",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+>>>>>>> a4a1e81 (на Ubu 15112024_0634)
   }
 }]]></component>
   <component name="RunManager">
