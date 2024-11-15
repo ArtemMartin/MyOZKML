@@ -9,13 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="378f745e-e824-4c2e-af7f-37169551029f" name="Changes" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/makekml/GenerateKML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/makekml/GenerateKML.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> 1e864bf4f4d953ddabef2f19934ae3ec04582e31
+    <list default="true" id="a66fad58-374a-4001-9449-51429753b310" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/makekml/SformirMetkyOZ3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/makekml/SformirMetkyOZ3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/makekml/SformirMetkyOZ3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/makekml/SformirMetkyOZ3.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,30 +41,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.SformirMetkyOZ3.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-<<<<<<< HEAD
-    "last_opened_file_path": "/home/artem/D/MyOZKML",
-=======
-<<<<<<< HEAD
-    "last_opened_file_path": "D:/YO_NA/Projekts/MakeKML",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
-=======
-    "last_opened_file_path": "/home/artem/D/Zasechka",
->>>>>>> 1e864bf4f4d953ddabef2f19934ae3ec04582e31
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
->>>>>>> a4a1e81 (на Ubu 15112024_0634)
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SformirMetkyOZ3.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/artem/D/MyOZKML&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="SformirMetkyOZ3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.makekml.SformirMetkyOZ3" />

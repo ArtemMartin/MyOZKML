@@ -201,9 +201,13 @@ public class SformirMetkyOZ3 {
     public static String getTime() {
         Calendar cal = Calendar.getInstance();
         cal.setTime(new Date());
-        int hours = cal.get(Calendar.HOUR_OF_DAY); 
+        int hours = cal.get(Calendar.HOUR_OF_DAY); // Получение времени в 24-часовом формате
         int minutes = cal.get(Calendar.MINUTE);
-        return hours + ":" + minutes;
+        if (minutes < 10) {
+            return hours + ":" + "0" + minutes;
+        } else {
+            return hours + ":" + minutes;
+        }
     }
 
     public static boolean pystoePole(MetkaFrame frame) {
