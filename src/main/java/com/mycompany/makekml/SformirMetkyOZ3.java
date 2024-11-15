@@ -201,7 +201,7 @@ public class SformirMetkyOZ3 {
     public static String getTime() {
         Calendar cal = Calendar.getInstance();
         cal.setTime(new Date());
-        int hours = cal.get(Calendar.HOUR_OF_DAY); // РџРѕР»СѓС‡РµРЅРёРµ РІСЂРµРјРµРЅРё РІ 24-С‡Р°СЃРѕРІРѕРј С„РѕСЂРјР°С‚Рµ
+        int hours = cal.get(Calendar.HOUR_OF_DAY); 
         int minutes = cal.get(Calendar.MINUTE);
         return hours + ":" + minutes;
     }
